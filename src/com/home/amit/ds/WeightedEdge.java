@@ -6,7 +6,7 @@ package com.home.amit.ds;
 /**
  * Represents an edge of a weighted graph.
  * 
- * @author Anshu
+ * @author Amit
  *
  */
 public class WeightedEdge implements Comparable<WeightedEdge> {
