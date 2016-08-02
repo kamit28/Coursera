@@ -14,7 +14,7 @@ import com.home.amit.ds.MaxHeap;
 import com.home.amit.ds.MinHeap;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class MedianMaintenance {
