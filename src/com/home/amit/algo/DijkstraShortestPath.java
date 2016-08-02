@@ -17,7 +17,7 @@ import com.home.amit.ds.WeightedAdjacencyList;
 import com.home.amit.ds.WeightedEdge;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class DijkstraShortestPath {
