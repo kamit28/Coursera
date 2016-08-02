@@ -91,34 +91,4 @@ public class CountInversions {
 		System.arraycopy(mergeLists, 0, arr, low, mergeLists.length);
 		return total;
 	}
-	/**
-	 * 
-	 Source #include <iostream> #include <cstdlib> using namespace std; int
-	 * count=0; void merge_sort(int *p,int init, int final) { if(final-init==0)
-	 * return; else { //t mid=(iit+final) int mid=(init+final)/2; int *t=new
-	 * int[final-init+1];
-	 * 
-	 * merge_sort(p,init,mid); merge_sort(p,mid+1,final); int i=0,j=init,
-	 * k=mid+1;
-	 * 
-	 * for(i=0;i<final-init+1&&j<=mid&&k<=final; i++) { if(p[j]<=p[k]) {
-	 * t[i]=p[j]; j++; } else { t[i]=p[k]; k++; //count incremented because
-	 * remaining elements in the left //array are bigger than the current
-	 * element of the right //array and we get a mid-j+1 cases of inversion
-	 * count=count+mid-j+1; } }
-	 * 
-	 * if(i<final-init+1) { if(j<=mid) { while(i<final-init+1) { t[i]=p[j]; i++;
-	 * j++; } } else { while(i<final-init+1) { t[i]=p[k]; i++; k++; }
-	 * 
-	 * } }
-	 * 
-	 * for(i=0;i<final-init+1;i++) { p[init+i]=t[i]; } } }
-	 * 
-	 * int main() { // your code goes here //this code implements merge-sort int
-	 * a[]={3,2,5,1,9,7}; //int a[]={4,5,6,1,2,3}; int n=sizeof(a)/sizeof(a[0]);
-	 * int i=0; merge_sort(a, 0, n-1); /*for(i=0;i<n;i++) { cout<<a[i]<<endl; }
-	 * cout<<count;
-	 * 
-	 * return 0; }
-	 */
 }
