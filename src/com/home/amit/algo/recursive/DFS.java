@@ -14,7 +14,7 @@ import java.util.List;
 import com.home.amit.ds.AdjacencyList;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class DFS {
