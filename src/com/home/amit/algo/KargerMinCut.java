@@ -12,7 +12,7 @@ import java.io.IOException;
 import com.home.amit.ds.AdjacencyList;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class KargerMinCut {
