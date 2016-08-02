@@ -16,7 +16,7 @@ import java.util.Set;
 import com.home.amit.ds.WeightedEdge;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class PrimsMinSpanning {
@@ -89,12 +89,6 @@ public class PrimsMinSpanning {
 
 		System.out.println(sumCost);
 	}
-
-	/*
-	 * private static Set<Integer> getAllVertices(List<List<WeightedEdge>>
-	 * graph) { Set<Integer> vertices = new HashSet<Integer>(); for (int i = 1;
-	 * i < graph.size(); i++) { vertices.add(i); } return vertices; }
-	 */
 
 	private static WeightedEdge findCheapestEdge(
 			List<List<WeightedEdge>> graph, Set<Integer> x) {
