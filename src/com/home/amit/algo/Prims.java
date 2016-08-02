@@ -6,7 +6,7 @@ import java.util.List;
 import com.home.amit.algo.Heap.HeapNode;
 
 /**
- * @author Grigorev Alexey
+ * @author Amit
  */
 public class Prims {
     private final UndirectedWeightedGraph graph;
