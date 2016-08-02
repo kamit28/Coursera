@@ -6,7 +6,7 @@ package com.home.amit.algo.test;
 import com.home.amit.algo.BubbleSort;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class SortAlgosTester {
