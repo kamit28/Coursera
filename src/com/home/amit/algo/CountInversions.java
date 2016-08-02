@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class CountInversions {
