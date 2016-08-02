@@ -4,7 +4,7 @@
 package com.home.amit.algo;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class BubbleSort<T extends Comparable<T>> {
