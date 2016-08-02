@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * Union-Find DS node
  * 
- * @author Prateek
+ * @author Amit
  * 
  */
 class UFNode {
@@ -25,7 +25,7 @@ class UFNode {
 /**
  * Union-Find Data structure
  * 
- * @author Prateek
+ * @author Amit
  * 
  */
 public class UnionFind {
