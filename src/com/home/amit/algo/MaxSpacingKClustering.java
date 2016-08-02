@@ -12,7 +12,7 @@ import java.util.Scanner;
 import com.home.amit.ds.UnionFind;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 class Edge1 implements Comparable<Edge1> {
@@ -37,12 +37,6 @@ class Edge1 implements Comparable<Edge1> {
 	}
 }
 
-/**
- * problem statement: What is the maximum spacing of a K-clustering
- * 
- * @author r.prateek
- *
- */
 public class MaxSpacingKClustering {
 
 	private int mNumVertices; // Number of vertices in the graph
