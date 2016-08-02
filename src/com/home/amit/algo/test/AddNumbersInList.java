@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class AddNumbersInList {
