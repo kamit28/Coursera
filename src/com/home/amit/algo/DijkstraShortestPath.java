@@ -32,8 +32,8 @@ public class DijkstraShortestPath {
 		try {
 			br = new BufferedReader(new FileReader(new File(
 			// "/Users/Anshu/Downloads/dijkstraData.txt")));
-					"/Users/Anshu/Downloads/dijkstraSmall.txt")));
-			WeightedAdjacencyList graph = new WeightedAdjacencyList(200);
+					"/Users/Anshu/Downloads/dijkstraData.txt")));
+			WeightedAdjacencyList graph = new WeightedAdjacencyList(4);
 			while ((sCurrentLine = br.readLine()) != null) {
 				String[] tokens = sCurrentLine.split("\\t");
 				String token;
@@ -47,16 +47,16 @@ public class DijkstraShortestPath {
 					edgeData = token.split(",");
 					edge = new WeightedEdge();
 					
-					//edge.getEndVertex(Integer.parseInt(edgeData[0]));
+					edge.setEndVertex(Integer.parseInt(edgeData[0]));
 					edge.setWeight(Integer.parseInt(edgeData[1]));
 					graph.setEdge(sVertex, edge);
 				}
 			}
 
 			// Print the adjacency list
-			// graph.print();
+			 graph.print();
 
-			dijkstra0(graph, 1);
+			dijkstra(graph, 1);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -91,8 +91,6 @@ public class DijkstraShortestPath {
 				unvisited.add(vertex);
 			}
 		}
-		WeightedEdge edge = null;
-		int i = source;
 		int alt;
 		int u;
 		while (!unvisited.isEmpty()) {
@@ -150,14 +148,14 @@ public class DijkstraShortestPath {
 	}
 
 	private static WeightedEdge getMinUnvistedEdge(WeightedAdjacencyList graph,
-			Set<Integer> unvisited, int i) {
+			Set<Integer> visited, int i) {
 		Iterator<WeightedEdge> iter = graph.getEdge(i).iterator();
 		WeightedEdge minEdge = new WeightedEdge();
 		minEdge.setWeight(10000000);
 		WeightedEdge temp = null;
 		while (iter.hasNext()) {
 			temp = iter.next();
-			if (unvisited.contains(temp.getEndVertex())) {
+			if (!visited.contains(temp.getEndVertex())) {
 				if (temp.getWeight() < minEdge.getWeight()) {
 					minEdge = temp;
 				}
