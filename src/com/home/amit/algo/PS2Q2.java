@@ -33,7 +33,7 @@ import java.util.Map.Entry;
  */
 public class PS2Q2 {
 	/*
-	 * This problem is exactly like PS2Q1 except that there are too many
+	 * This problem is exactly like MaxSpacingK_Clustering except that there are too many
 	 * comparisons to make if we go with crude approach. 20000 x 20000
 	 * comparisons needed
 	 */

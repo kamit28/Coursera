@@ -25,7 +25,7 @@ import java.util.Collections;
  Your task in this problem is to run the clustering algorithm from lecture on this data set, 
  where the target number k of clusters is set to 4. What is the maximum spacing of a 4-clustering?
  */
-public class PS2Q1 {
+public class MaxSpacingK_Clustering {
 	static int[] parents;
 
 	/*
@@ -97,16 +97,19 @@ public class PS2Q1 {
 
 	/**
 	 * @param args
+	 * @throws IOException
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		ArrayList<Edge> edges = new ArrayList<Edge>();
 		ArrayList<ArrayList<Integer>> clusters = new ArrayList<ArrayList<Integer>>();
 		int k = 4;
 		int n = 0;
+		BufferedReader b = null;
 		try {
-			FileInputStream f = new FileInputStream("/Users/Anshu/Downloads/clustering1.txt");
+			FileInputStream f = new FileInputStream(
+					"/Users/Anshu/Downloads/clustering1.txt");
 			DataInputStream d = new DataInputStream(f);
-			BufferedReader b = new BufferedReader(new InputStreamReader(d));
+			b = new BufferedReader(new InputStreamReader(d));
 			n = Integer.parseInt(b.readLine());
 			parents = new int[n];
 
@@ -146,6 +149,9 @@ public class PS2Q1 {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			if (b != null)
+				b.close();
 		}
 
 		// create n clusters

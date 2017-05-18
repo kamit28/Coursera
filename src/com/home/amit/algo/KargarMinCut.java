@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 /**
  * @author Amit
  */
-public class Main {
+public class KargarMinCut {
 	/**
 	 * @param args
 	 *            the command line arguments
@@ -79,7 +79,7 @@ public class Main {
 		// Remove second list items
 		graph.remove(randomItems.get(1));
 		// Replace second item appearances by first item
-		Iterator it = graph.keySet().iterator();
+		Iterator<Integer> it = graph.keySet().iterator();
 		while (it.hasNext()) {
 			Integer currentKey = (Integer) it.next();
 			ArrayList<Integer> currentItemList = graph.get(currentKey);
@@ -127,7 +127,7 @@ public class Main {
 	private static HashMap<Integer, ArrayList<Integer>> copyGraph(
 			HashMap<Integer, ArrayList<Integer>> graph) {
 		HashMap<Integer, ArrayList<Integer>> graphCopy = new HashMap<Integer, ArrayList<Integer>>();
-		Iterator it = graph.keySet().iterator();
+		Iterator<Integer> it = graph.keySet().iterator();
 		while (it.hasNext()) {
 			Integer currentKey = (Integer) it.next();
 			ArrayList<Integer> currentItemList = graph.get(currentKey);
@@ -164,14 +164,14 @@ public class Main {
 			}
 			br.close();
 		} catch (FileNotFoundException ex) {
-			Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(KargarMinCut.class.getName()).log(Level.SEVERE, null, ex);
 		} catch (IOException ex) {
-			Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(KargarMinCut.class.getName()).log(Level.SEVERE, null, ex);
 		} finally {
 			try {
 				fstream.close();
 			} catch (IOException ex) {
-				Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null,
+				Logger.getLogger(KargarMinCut.class.getName()).log(Level.SEVERE, null,
 						ex);
 			}
 		}
