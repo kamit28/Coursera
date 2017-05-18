@@ -18,7 +18,7 @@ import com.home.amit.ds.StackArrayImpl;
 import com.home.amit.ds.StackLinkImpl;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class NonRecursiveDFS {

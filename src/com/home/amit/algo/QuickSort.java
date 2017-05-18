@@ -10,7 +10,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class QuickSort {

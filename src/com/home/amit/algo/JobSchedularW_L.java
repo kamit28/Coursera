@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class JobSchedularW_L {

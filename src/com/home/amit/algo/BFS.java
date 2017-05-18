@@ -15,7 +15,7 @@ import com.home.amit.ds.IQueue;
 import com.home.amit.ds.QueueArrayImpl;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class BFS {

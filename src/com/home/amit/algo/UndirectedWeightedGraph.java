@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Undirected graph with weighted edges
  * 
- * @author Grigorev Alexey
+ * @author Amit
  */
 public class UndirectedWeightedGraph {
     private int n;

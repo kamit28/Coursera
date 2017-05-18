@@ -15,9 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Algorithms: Design and Analysis, Part 1 Programming Question - Week 3
- * 
- * @author Felix Garcia Lainez
+ * @author Amit
  */
 public class Main {
 	/**

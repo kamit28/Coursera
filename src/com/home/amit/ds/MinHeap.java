@@ -4,7 +4,7 @@
 package com.home.amit.ds;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class MinHeap {

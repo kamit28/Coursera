@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class ListSizeComparator implements Comparator<List<Integer>> {

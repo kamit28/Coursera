@@ -12,7 +12,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class TSP {

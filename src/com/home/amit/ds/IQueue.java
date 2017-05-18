@@ -6,7 +6,7 @@ package com.home.amit.ds;
 import java.io.Serializable;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public interface IQueue<E> extends Cloneable, Serializable {

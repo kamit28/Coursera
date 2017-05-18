@@ -6,10 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Implementation is based on
- * http://algorithms.soc.srcf.net/notes/dijkstra_with_heaps.pdf
- * 
- * @author Grigorev Alexey
+ * @author Amit
  */
 public class Heap<E, K> {
 

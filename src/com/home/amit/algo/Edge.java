@@ -3,7 +3,7 @@ package com.home.amit.algo;
 /**
  * A weighted edge for {@link UndirectedWeightedGraph}
  * 
- * @author Grigorev Alexey
+ * @author Amit
  */
 public class Edge {
 

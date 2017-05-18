@@ -4,7 +4,7 @@
 package com.home.amit.threading;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class Account {

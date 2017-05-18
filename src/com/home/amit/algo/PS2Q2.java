@@ -12,9 +12,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 /*
- * In this question your task is again to run the clustering algorithm from lecture, but on a MUCH bigger graph. So big, in fact, 
- * that the distances (i.e., edge costs) are only defined implicitly, rather than being provided as an explicit list.
- The data set is here. The format is:
+ * The data set is here. The format is:
  [# of nodes] [# of bits for each node's label]
  [first bit of node 1] ... [last bit of node 1]
  [first bit of node 2] ... [last bit of node 2]

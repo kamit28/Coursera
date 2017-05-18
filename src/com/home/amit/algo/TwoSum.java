@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author Anshu
+ * @author Amit
  *
  */
 public class TwoSum {
