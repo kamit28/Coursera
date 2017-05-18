@@ -39,9 +39,9 @@ public class BinarySearchTree<E> {
 							.println("Can not insert in tree. Object already exists.");
 				}
 			}
-			if (comparator.compare(temp.getData(), element) > 0) {
+			if (comparator.compare(prev.getData(), element) > 0) {
 				prev.setLeft(node);
-			} else if (comparator.compare(temp.getData(), element) < 0) {
+			} else if (comparator.compare(prev.getData(), element) < 0) {
 				prev.setRight(node);
 			}
 		}
