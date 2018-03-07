@@ -1,5 +1,6 @@
 package com.home.amit.algo;
 
+// Print all combinations of elements in an array
 public class AllCombinations {
 	static int[] B = { 1, 2, 3 };
 
